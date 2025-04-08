@@ -1,45 +1,99 @@
-body {
-  font-family: sans-serif;
+
+* {
   margin: 0;
   padding: 0;
-  background: #111;
-  color: #f0f0f0;
-  line-height: 1.6;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fefefe;
 }
 
 header {
-  background: #222;
-  padding: 2rem;
-  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffd700;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  color: #ffd700;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fefefe;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd700;
+}
+
+.resume-btn {
+  border: 1px solid #ffd700;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 60px 20px;
 }
 
 section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 80px;
 }
 
-section h2 {
-  color: #ff8800;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffd700;
 }
 
 ul {
-  list-style: square;
-  margin-left: 1.5rem;
+  padding-left: 20px;
 }
 
-a {
-  color: #66ccff;
+ul li {
+  margin-bottom: 8px;
 }
 
 footer {
+  background-color: #1e1e1e;
+  color: #aaa;
   text-align: center;
-  padding: 1rem;
-  background: #222;
-  margin-top: 2rem;
+  padding: 20px 0;
+  border-top: 2px solid #ffd700;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+#intro-overlay h1 {
+  color: #facc15;
+  font-size: 3em;
 }
