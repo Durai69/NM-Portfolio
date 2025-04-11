@@ -118,3 +118,43 @@ footer {
   color: #ffd700;
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a,
+  .resume-btn {
+    margin: 0;
+    padding: 8px 12px;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    color: #fefefe;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .resume-btn {
+    background-color: transparent;
+  }
+
+  nav a:hover,
+  .resume-btn:hover {
+    color: #ffd700;
+    text-decoration: underline;
+  }
+}
